@@ -1,8 +1,11 @@
 import React from 'react'
+import Container from '../Container'
 
 const Error = () => {
   return (
-    <img className='max-w-full' src="/src/assets/error.jpg" alt="" />
+<Container>
+      <img className='max-w-full' src="/src/assets/error.jpg" alt="" />
+</Container>
   )
 }
 

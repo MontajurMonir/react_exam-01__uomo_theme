@@ -1,8 +1,17 @@
 import React from 'react'
+import Banner from '../Layout/Banner'
+import WeekendDeal from '../Layout/WeekendDeal'
+import LimitedEdition from '../Layout/LimitedEdition'
+import Product from '../Product'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <Banner/>
+    <WeekendDeal/>
+    <LimitedEdition/>
+    
+    </>
   )
 }
 

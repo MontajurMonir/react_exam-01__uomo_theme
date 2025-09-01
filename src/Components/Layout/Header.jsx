@@ -7,6 +7,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { FaRegHeart, FaRegUser } from "react-icons/fa";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { RiMenu2Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -15,23 +16,39 @@ const Header = () => {
         <Container>
           <Flex className={"gap-x-14 py-7 "}>
             <div>
-              <Image imgSrc={Logo} />
+              <Link>
+                <Image imgSrc={Logo} />
+              </Link>
             </div>
             <Flex className="justify-between w-full">
               <div>
                 <ul className="flex items-center gap-x-9 text-[14px] font-medium text-menuColor">
-                  <li>HOME</li>
-                  <li>SHOP</li>
-                  <li>COLLECTION</li>
-                  <li>JOURNAL</li>
-                  <li>LOOKBOOK</li>
-                  <li>PAGES</li>
+                  <Link to={"/"}>
+                    <li>HOME</li>
+                  </Link >
+                  <Link to={"shop"}>
+                    <li>SHOP</li>
+                  </Link>
+                  <Link to={"collection"}>
+                    <li>COLLECTION</li>
+                  </Link>
+                  <Link to={"journal"}>
+                    <li>JOURNAL</li>
+                  </Link>
+                  <Link to={"lookbook"}>
+                    <li>LOOKBOOK</li>
+                  </Link>
+                  <Link to={"pages"}>
+                    <li>PAGES</li>
+                  </Link>
                 </ul>
               </div>
               <div>
-                <Flex className={"gap-x-7 text-menuColor text-[20px] font-medium"}>
+                <Flex
+                  className={"gap-x-7 text-menuColor text-[20px] font-medium"}
+                >
                   <IoSearchOutline />
-                  <FaRegUser />
+                  <FaRegUser />  
                   <FaRegHeart />
                   <HiOutlineShoppingBag />
                   <RiMenu2Line />
