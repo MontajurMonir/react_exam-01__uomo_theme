@@ -9,6 +9,7 @@ import Collection from "./Components/Pages/Collection";
 import Journal from "./Components/Pages/Journal";
 import Lookbook from "./Components/Pages/Lookbook";
 import Pages from "./Components/Pages/Pages";
+import SignUp from "./Components/Pages/SignUp";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="journal" element={<Journal />} />
           <Route path="lookbook" element={<Lookbook />} />
           <Route path="pages" element={<Pages />} />
+          <Route path="signup" element={<SignUp />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
