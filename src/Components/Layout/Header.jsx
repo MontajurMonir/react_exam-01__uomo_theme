@@ -9,6 +9,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import { RiMenu2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
+
 const Header = () => {
   return (
     <>
@@ -48,7 +49,7 @@ const Header = () => {
                   className={"gap-x-7 text-menuColor text-[20px] font-medium"}
                 >
                   <IoSearchOutline />
-                  <FaRegUser />  
+                  <Link to={"signup"}><FaRegUser />  </Link>
                   <FaRegHeart />
                   <HiOutlineShoppingBag />
                   <RiMenu2Line />
