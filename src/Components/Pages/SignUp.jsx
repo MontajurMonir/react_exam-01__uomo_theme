@@ -31,11 +31,11 @@ const SignUp = () => {
               </label>
               <div className="relative">
                 <select className="w-full px-3 py-2  text-neutral-500 rounded-lg border border-neutral-300 bg-white">
-                  <option value="" disabled>
+                  <option value="" disabled selected>
                     Please select
                   </option>
                   {apiData.map((item) => (
-                    <option value="" selected>
+                    <option value="" >
                       {item.name}
                     </option>
                   ))}
